@@ -8,5 +8,5 @@ Install dependencies:-
 
 **How to run:**
 
-`python main.py <input image>`
+`python3 main.py <input image>`
 
