@@ -12,9 +12,9 @@ else:
 	filename = wget.download(url)
 
 OUTPUT_FILE = 'output.jpg'
-LABELS_FILE = 'darknet/data/coco.names'
-CONFIG_FILE = 'darknet/cfg/yolov3.cfg'
-WEIGHTS_FILE = 'darknet/yolov3.weights'
+LABELS_FILE = 'coco.names'
+CONFIG_FILE = 'yolov3.cfg'
+WEIGHTS_FILE = 'yolov3.weights'
 CONFIDENCE_THRESHOLD = 0.3
 
 if len(sys.argv) > 1:
