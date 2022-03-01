@@ -1,2 +1,8 @@
 # Object-Detection
-Object detection from images.
+In this project we will detect objects from images. To do image recognition we will use YOLO library data. 
+YOLO is the best model in terms of accuracy, speed and cost. As this project use Darknet repo as a core so first we have to set that up.
+
+**How to run:**
+
+`python main.py <input image>`
+
