@@ -3,13 +3,18 @@ import time
 import cv2
 import sys
 import os
+import wget
 
+if os.path.isfile("yolov3.weights"):
+	pass
+else:
+	url = 'https://pjreddie.com/media/files/yolov3.weights'
+	filename = wget.download(url)
 
-#INPUT_FILE = 'image.jpg'
 OUTPUT_FILE = 'output.jpg'
-LABELS_FILE = 'coco.names'
-CONFIG_FILE = 'yolov3.cfg'
-WEIGHTS_FILE = 'yolov3.weights'
+LABELS_FILE = 'darknet/data/coco.names'
+CONFIG_FILE = 'darknet/cfg/yolov3.cfg'
+WEIGHTS_FILE = 'darknet/yolov3.weights'
 CONFIDENCE_THRESHOLD = 0.3
 
 if len(sys.argv) > 1:
@@ -102,3 +107,4 @@ if len(idxs) > 0:
 
 # output in output.jpg
 cv2.imwrite(OUTPUT_FILE, image)
+
